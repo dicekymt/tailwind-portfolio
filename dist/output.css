@@ -585,14 +585,6 @@ video {
   }
 }
 
-.right-6 {
-  right: 1.5rem;
-}
-
-.-z-10 {
-  z-index: -10;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -610,10 +602,6 @@ video {
   margin-right: 0.25rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .flex {
   display: flex;
 }
@@ -626,8 +614,12 @@ video {
   width: 100%;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -636,6 +628,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -652,14 +648,22 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .bg-body {
   --tw-bg-opacity: 1;
-  background-color: rgb(5 5 5 / var(--tw-bg-opacity));
+  background-color: rgb(248 239 2 / var(--tw-bg-opacity));
 }
 
 .bg-theme {
   --tw-bg-opacity: 1;
   background-color: rgb(92 49 140 / var(--tw-bg-opacity));
+}
+
+.bg-hero-img {
+  background-image: url('./src/images/header_bg.jpg');
 }
 
 .py-6 {
@@ -709,9 +713,19 @@ video {
   font-weight: 700;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-sky-500 {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -770,17 +784,9 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute;
-  }
-
   .md\:my-36 {
     margin-top: 9rem;
     margin-bottom: 9rem;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
   }
 
   .md\:flex {
@@ -791,12 +797,12 @@ video {
     display: none;
   }
 
-  .md\:w-3\/5 {
-    width: 60%;
-  }
-
   .md\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
   }
 
   .md\:px-14 {
@@ -815,20 +821,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:top-2 {
-    top: 0.5rem;
-  }
-
-  .lg\:right-52 {
-    right: 13rem;
-  }
-
   .lg\:ml-20 {
     margin-left: 5rem;
-  }
-
-  .lg\:w-3\/6 {
-    width: 50%;
   }
 
   .lg\:px-24 {

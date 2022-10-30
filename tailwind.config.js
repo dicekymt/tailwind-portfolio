@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        body:"#050505",
+        body:"#F8EF02",
         "selected-text":"#A3A3FF",
         theme:"#5c318c"
+      },
+      backgroundImage:{
+        'hero-img': "url('./src/images/header_bg.jpg')",
       }
     },
     fontFamily:{
