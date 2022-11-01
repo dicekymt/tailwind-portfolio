@@ -13,3 +13,6 @@
 .section-p {
     @apply w-full max-w-3xl my-6 text-secondary; 
 }
+.badge {
+    @apply px-4 py-2 text-sm bg-badge text-white font-semibold;
+}
