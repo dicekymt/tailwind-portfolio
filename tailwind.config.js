@@ -13,7 +13,7 @@ module.exports = {
         input:"#FFF"
       },
       backgroundImage:{
-        'hero-img': "url('./src/images/header_bg.jpg')",
+        'hero-img': "url('./images/header_bg.jpg')",
       }
     },
     fontFamily:{

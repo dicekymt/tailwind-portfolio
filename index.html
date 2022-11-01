@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>tailwind Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="text-black font-raleway bg-body">
+    <header class="">
+      <div
+        class="container absolute top-0 left-0 right-0 z-40 flex items-center justify-between w-full px-8 py-2 mx-auto md:px-14 lg:px-24"
+      >
+        <div class="text-lg font-bold text-white">motofolio.me</div>
+        <div class="items-center hidden space-x-12 md:flex">
+          <a
+            href="#home"
+            class="font-bold text-white hover:text-selected-text transition-all duration-300"
+            >Top</a
+          >
+          <a
+            href="#work"
+            class="font-bold text-white hover:text-selected-text transition-all duration-300"
+            >Work</a
+          >
+          <a
+            href="#skill"
+            class="font-bold text-white hover:text-selected-text transition-all duration-300"
+            >Skill</a
+          >
+          <a href="#contact"
+            ><button
+              class="px-6 py-2 text-white rounded bg-theme hover:bg-purple-600 transition-all duration-300"
+            >
+              Contact
+            </button></a
+          >
+        </div>
+        <div class="text-white md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    <div
+      class="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
+    >
+      <div
+        class="relative z-30 flex flex-col"
+      >
+        <h1
+          class="text-5xl font-bold text-center text-white md:text-left lg:text-7xl md:text-6xl"
+        >
+          Stylish<br />
+          Website<br />
+          tailwindcss
+        </h1>
+        <button
+          class="px-6 py-4 mt-10 font-bold text-white rounded-lg bg-theme hover:bg-purple-600 transition-all duration-300"
+        >
+          <i class="mr-1 fa-solid fa-rocket"></i>
+          <span>view more</span>
+        </button>
+      </div>
+      <video
+        autoplay
+        loop
+        muted
+        class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+      >
+        <source src="./images/hero_bg_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    </header>
+    <!-- work -->
+      <div id="work" class="container flex items-center justify-between w-full px-8 mx-auto mt-16 md:px-14 lg:px-24">
+        <section class="w-full">
+          <h2 class="secondary-ttl">My Works</h2>
+          <p class="section-p">Web Application I've created</p>
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+            <img src="./src/images/portfolio1.jpg" alt="portfolio1" class="object-cover w-full cursor-pointer h-36 lg:h-72 rounded-md" />
+            <img src="./src/images/portfolio2.jpg" alt="portfolio1" class="object-cover w-full cursor-pointer h-36 lg:h-72 rounded-md" />
+            <img src="./src/images/portfolio3.jpg" alt="portfolio1" class="object-cover w-full cursor-pointer h-36 lg:h-72 rounded-md" />
+            <img src="./src/images/portfolio4.jpg" alt="portfolio1" class="object-cover w-full cursor-pointer h-36 lg:h-72 rounded-md" />
+            <img src="./src/images/portfolio5.jpg" alt="portfolio1" class="object-cover w-full cursor-pointer h-36 lg:h-72 rounded-md" />
+            <img src="./src/images/portfolio6.jpg" alt="portfolio1" class="object-cover w-full cursor-pointer h-36 lg:h-72 rounded-md" />
+          </div>
+        </section> 
+      </div>
+    <!-- skill -->
+      <div id="skill" class="container flex items-center justify-between w-full px-8 mx-auto mt-16 md:px-14 lg:px-24">
+        <section class="w-full">
+          <h2 class="secondary-ttl">Skill</h2>
+          <p class="section-p">What I Can use</p>
+          <!-- js -->
+          <div class="my-16">
+            <div class="w-full border border-slate-200 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-red-300 transition-all duration-300 cursor-pointer">
+              <div class="mb-16 lg:mb-0 self-center">
+                <i class="fa-brands fa-js-square text-9xl text-yellow-700"></i>
+              </div>
+              <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">Javascript</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-6">
+                  <div class="badge">Web Site</div>
+                  <div class="badge">Develop Front-end</div>
+                </div>
+                <p class="text-secondary">
+                  I'm Software Developer with React.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- python -->
+          <div class="my-16">
+            <div class="w-full border border-slate-200 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-blue-700 transition-all duration-300 cursor-pointer">
+              <div class="mb-16 lg:mb-0 self-center">
+                <i class="fa-brands fa-python text-9xl text-blue-700"></i>
+              </div>
+              <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">Python</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-6">
+                  <div class="badge">AI/DX</div>
+                  <div class="badge">Data Science</div>
+                </div>
+                <p class="text-secondary">
+                  AI system development.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- html -->
+          <div class="my-16">
+            <div class="w-full border border-slate-200 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-orange-400 transition-all duration-300 cursor-pointer">
+              <div class="mb-16 lg:mb-0 self-center">
+                <i class="fa-brands fa-html5 text-9xl text-orange-400"></i>
+              </div>
+              <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">HTML/CSS</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-6">
+                  <div class="badge">UI/UX</div>
+                  <div class="badge">Create WebPage</div>
+                </div>
+                <p class="text-secondary">
+                  I'm Software Developer with React.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- contact -->
+      <div id="contact" class="container flex items-center justify-between w-full px-8 mx-auto mt-16 md:px-14 lg:px-24 mb-20">
+        <section class="w-full">
+          <h2 class="secondary-ttl">Contact</h2>
+          <p class="section-p">Send me message</p>
+          <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
+            <div class="space-y-12">
+              <div>
+                <label class="block mb-2 text-xl font-bold">Name</label>
+                <input type="text" class="w-full border border-inputBorder bg-input px-4 py-4">
+              </div>
+              <div>
+                <label class="block mb-2 text-xl font-bold">Mail</label>
+                <input type="email" class="w-full border border-inputBorder bg-input px-4 py-4">
+              </div>
+              <div>
+                <label class="block mb-2 text-xl font-bold">Message</label>
+                <textarea row="10" type="text" class="w-full border border-inputBorder bg-input px-4 py-4">Please write here</textarea>
+              </div>
+              <button
+              class="px-6 py-2 text-white rounded bg-theme hover:bg-purple-600 transition-all duration-300">Send
+              </button>
+            </div>
+            <div>
+              <p class="text-secondary">000-0000-0000</p>
+              <a href="#">moto@motogram.me</a>
+              <div class="space-x-6 mt-4">
+                <a href="#">
+                  <i class="fa-brands fa-twitter text-3xl text-blue-400"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-facebook text-3xl text-blue-600"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram text-3xl text-pink-400"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+  </body>
+</html>
+
