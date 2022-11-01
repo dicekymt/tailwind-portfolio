@@ -6,7 +6,9 @@ module.exports = {
       colors:{
         body:"#F8EF02",
         "selected-text":"#A3A3FF",
-        theme:"#5c318c"
+        theme:"#5c318c",
+        secondary:"#9191A4",
+        badge:"#3F3F51"
       },
       backgroundImage:{
         'hero-img': "url('./src/images/header_bg.jpg')",
